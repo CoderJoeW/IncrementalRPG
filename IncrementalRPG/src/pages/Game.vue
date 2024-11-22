@@ -170,19 +170,22 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div id="dev-buttons" class="hidden">
-                    <button onclick="saveGame()">Save</button>
-                    <button onclick="clearLocalStorage()">Clear Local Storage</button>
-                    <button onclick="maxEverything()">Max Everything</button>
-                    <button onclick="upStorage()">Up Storage</button>
-                </div>
+                <DevButtons :isDevMode="true"/>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import DevButtons from '@/components/DevButtons.vue';
+
 export default {
-    name: 'Game'
+    name: 'Game',
+    components: {
+        DevButtons
+    },
+    methods: {
+
+    }
 }
 </script>
