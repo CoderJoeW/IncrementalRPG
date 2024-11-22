@@ -1,7 +1,7 @@
 /*
  * On Window Load
  */
-window.onload = function() {
+window.onload = function () {
     setInterval(updateDisplay, meta.fps);
     setInterval(tick, meta.tick);
     setInterval(saveGame, meta.saveGameInterval);
@@ -35,7 +35,7 @@ Calc = {
      * Returns true if all resource has been spent.
      * Returns false if one resource cannot be spent. It will not spend any resources if one cannot be spent.
      */
-    spendResources: function(arr) {
+    spendResources: function (arr) {
         var shortages = [];
 
         for (a in arr) {
@@ -67,7 +67,7 @@ Calc = {
      * x - object = The cost object.
      * Returns an array or arrays [[the resource slug, the amount to spend], [...]]
      */
-    expensesArray: function(x) {
+    expensesArray: function (x) {
         expenses = [];
         for (i in x) {
             let costValue = x[i];
